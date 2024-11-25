@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Table: representation of data in row & column format -->
+    <!-- table thead tbody tfoot tr th td -> tags used in table concept -->
+
+    <!-- example 1 -->
+    <table border="1">
+        <!-- thead for heading of table -->
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>abh</td>
+                <td>12</td>
+                <td rowspan="4" >12</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+                
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">12</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <!-- example 2 -->
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2" >Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>  
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Column 1</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- example 3 -->
+    <table border="1">
+        <!-- creating heading for table -->
+        <thead>
+            <th>No</th>
+            <th>Full name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+
+        <!-- creating body for table -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder MS</td>
+                <td>$1000</td>
+                <td rowspan="4" >Company Founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1300</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark</td>
+                <td>Founder FB</td>
+                <td>$2400</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expense :</td>
+                <td>$5600</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
